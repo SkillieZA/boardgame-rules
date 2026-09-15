@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "games": [
+    {
+      "id": "rapid_clues",
+      "name": "30 Seconds",
+      "subtitle": "Fast clues, quick guesses, team play",
+      "defaultTimerSeconds": 30,
+      "rules": "games/30-seconds/rules.md",
+      "image": "games/30-seconds/header.png",
+      "theme": {
+        "primary": "#0756B7",
+        "secondary": "#FF6B3D",
+        "background": "#FFF7E8"
+      }
+    },
+    {
+      "id": "property_trading",
+      "name": "Monopoly",
+      "subtitle": "Buy, trade, build, and outlast your rivals",
+      "defaultTimerSeconds": 60,
+      "rules": "games/monopoly/rules.md",
+      "image": "games/monopoly/header.png",
+      "theme": {
+        "primary": "#174C3C",
+        "secondary": "#9D2D2D",
+        "background": "#F5EBD6"
+      }
+    }
+  ]
+}
