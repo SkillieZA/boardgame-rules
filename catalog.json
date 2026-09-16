@@ -26,6 +26,19 @@
         "secondary": "#9D2D2D",
         "background": "#F5EBD6"
       }
+    },
+    {
+      "id": "balderdash",
+      "name": "Balderdash",
+      "subtitle": "Invent convincing answers and spot the truth",
+      "defaultTimerSeconds": 60,
+      "rules": "games/balderdash/rules.md",
+      "image": "games/balderdash/header.png",
+      "theme": {
+        "primary": "#5A2448",
+        "secondary": "#D59616",
+        "background": "#FFF4DC"
+      }
     }
   ]
 }
