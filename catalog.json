@@ -39,6 +39,82 @@
         "secondary": "#D59616",
         "background": "#FFF4DC"
       }
+    },
+    {
+      "id": "risk",
+      "name": "Risk",
+      "subtitle": "Build armies, battle rivals, and conquer territories",
+      "defaultTimerSeconds": 60,
+      "rules": "games/risk/rules.md",
+      "image": "games/risk/header.png",
+      "dice": [
+        {
+          "id": "attacker",
+          "name": "Attack",
+          "count": 3,
+          "sides": 6,
+          "color": "#B3261E"
+        },
+        {
+          "id": "defender",
+          "name": "Defend",
+          "count": 2,
+          "sides": 6,
+          "color": "#FFF8E7"
+        }
+      ],
+      "theme": {
+        "primary": "#8C1D18",
+        "secondary": "#1F4E6D",
+        "background": "#F3E8D2"
+      }
+    },
+    {
+      "id": "wingspan",
+      "name": "Wingspan",
+      "subtitle": "Attract birds and grow thriving habitats",
+      "defaultTimerSeconds": 60,
+      "rules": "games/wingspan/rules.md",
+      "image": "games/wingspan/header.png",
+      "dice": [
+        {
+          "id": "birdfeeder",
+          "name": "Food",
+          "count": 5,
+          "color": "#F2E2BE",
+          "faces": [
+            {
+              "label": "Invertebrate",
+              "image": "games/wingspan/dice/invertebrate.png"
+            },
+            {
+              "label": "Seed",
+              "image": "games/wingspan/dice/seed.png"
+            },
+            {
+              "label": "Fish",
+              "image": "games/wingspan/dice/fish.png"
+            },
+            {
+              "label": "Fruit",
+              "image": "games/wingspan/dice/fruit.png"
+            },
+            {
+              "label": "Rodent",
+              "image": "games/wingspan/dice/rodent.png"
+            },
+            {
+              "label": "Invertebrate or seed",
+              "image": "games/wingspan/dice/invertebrate-or-seed.png"
+            }
+          ]
+        }
+      ],
+      "theme": {
+        "primary": "#315F55",
+        "secondary": "#C65F45",
+        "background": "#F2F1E7"
+      }
     }
   ]
 }

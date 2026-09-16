@@ -24,10 +24,47 @@ Use standard Markdown image syntax. Image paths are resolved relative to the `ru
 
 For that example, store the image at `games/your-game/images/board-setup.png`. Absolute HTTPS image URLs are also supported. Write meaningful image descriptions because the app uses them for accessibility and displays them as captions.
 
+## Dice
+
+The optional `dice` array defines the dice tray for a game. A standard numbered pool specifies `sides`:
+
+```json
+{
+  "id": "attacker",
+  "name": "Attack",
+  "count": 3,
+  "sides": 6,
+  "color": "#B3261E"
+}
+```
+
+A custom die replaces `sides` with a `faces` array. Face images may use repository-relative paths or absolute HTTPS URLs:
+
+```json
+{
+  "id": "food",
+  "name": "Food",
+  "count": 5,
+  "color": "#F2E2BE",
+  "faces": [
+    {
+      "label": "Fish",
+      "image": "games/example/dice/fish.png"
+    },
+    {
+      "label": "Seed",
+      "image": "games/example/dice/seed.png"
+    }
+  ]
+}
+```
+
+Dice IDs must be unique within a game. Counts may be 1–20 and dice may have 2–100 sides or custom faces. Every face needs a meaningful label for accessibility; `image` is optional.
+
 ## Catalog fields
 
 - `defaultTimerSeconds` must be between 1 and 600.
 - Colours use `#RRGGBB` or `#AARRGGBB` notation.
-- `rules` and `image` may be repository-relative paths or absolute HTTPS URLs.
+- `rules`, `image`, and custom die-face images may be repository-relative paths or absolute HTTPS URLs.
 
 The included guides are concise references. The rulebook supplied with a game remains authoritative.
